@@ -1,0 +1,15 @@
+.calculator {
+    background: white;
+    width: 240px;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid black;
+  }
+
+  .keyRow {
+    display: table;
+    width: 100%;
+  }
+
+
+  

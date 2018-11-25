@@ -1,0 +1,23 @@
+.key {
+    cursor: pointer;
+    display: table-cell;
+    width: 33.33%;
+    height: 60px;
+    text-align: center;
+    vertical-align: middle;
+    color: #919191;
+    padding: 10px 0;
+    transition: all 0.2s;
+    border: 1px solid #f8f8f8;
+    user-select: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -o-user-select: none;
+    user-select: none;
+  }
+
+  .highlighted
+  {
+    color: burlywood
+  }

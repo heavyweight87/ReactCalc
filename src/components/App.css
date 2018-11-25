@@ -1,0 +1,11 @@
+#root {
+  width: 320px;
+  height: 520px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+
+
