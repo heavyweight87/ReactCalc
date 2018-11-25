@@ -12,7 +12,7 @@ class Display extends React.Component {
 
     render() {
         return (
-            <div className="display">{this.state.value}</div>
+            <div className="display">{this.props.value}</div>
         );
     }
 }

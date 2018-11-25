@@ -9,7 +9,6 @@ class Key extends React.Component {
           isHighlighted: false
         };
 
-        this.handleClick = this.handleClick.bind(this);
         this.onMouseDown = this.onMouseDown.bind(this);
         this.onMouseUp = this.onMouseUp.bind(this);
     }
@@ -21,7 +20,7 @@ class Key extends React.Component {
         }
         return (
             <div className={classString}
-                onClick={this.handleClick}
+                onClick={this.onClick.bind(this)}
                 onMouseDown={this.onMouseDown}
                 onMouseUp={this.onMouseUp}>
                 {this.props.name}
@@ -29,20 +28,20 @@ class Key extends React.Component {
         );
     }
 
-    handleClick() {
-        
+    onClick() {
+        this.props.handleKeyClick(this.props.name)
     }
     
     onMouseDown() {
-    this.setState({
-        isHighlighted: true
-    });
+        this.setState({
+            isHighlighted: true
+        });
     }
     
     onMouseUp() {
-    this.setState({
-        isHighlighted: false
-    });
+        this.setState({
+            isHighlighted: false
+        });
     }
 }
 
